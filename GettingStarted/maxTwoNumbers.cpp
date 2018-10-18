@@ -4,7 +4,13 @@
 
 #include <iostream>
 using namespace std;
-
+int max(int x, int y)
+{
+  if(x>y)
+    returnx;
+  else
+    return y;
+} 
 int main(){
   
     int num1, num2;
@@ -55,17 +61,12 @@ int main(){
         So, we can now continue with the program:
     */
   
-    int max; // to store the maximum out of the two
+    int m; // to store the maximum out of the two
     
     // conditional statement 
-    if(num1 > num2){   
-        max = num1;
-    }
-    else{
-        max = num2;
-    }
+   m=max(num1,num2);
     
-    cout << "The maximum no. is: " << max << "\n";
+    cout << "The maximum no. is: " << m << "\n";
   
     /*
         Note that the following piece of code can be replaced with lines 56 to 61 
