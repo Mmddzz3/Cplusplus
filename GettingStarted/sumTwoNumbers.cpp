@@ -27,6 +27,12 @@ using namespace std;
         function body;
     }
 */
+int sum(int x, int y)
+{
+    int s;
+    s=x+y;
+    return s;
+}   
 int main(){
     
     /*
@@ -62,8 +68,7 @@ int main(){
     */
     
     // assign the sum of numbers to the variable result
-    result = num1 + num2;
-    
+    result = sum(num1,num2);   
     /*
         - Displaying output to the user (cout - usage similar to cin)
         1. cout (see - out) is used.
