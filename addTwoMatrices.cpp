@@ -29,7 +29,7 @@ int main()
 	{
 		for (j = 0; j < columns; j++)
 		{
-			cout << "Element " << "[" << i + 1 << "," << j + 1 << "]" << ":           ";
+			
 			cin >> matrix1[i][j];
 		}
 	}
@@ -42,7 +42,7 @@ int main()
 	{
 		for (j = 0; j < columns; j++)
 		{
-			cout << "Element " << "[" << i + 1 << "," << j + 1 << "]" << ":           ";
+			
 			cin >> matrix2[i][j];
 		}
 	}
