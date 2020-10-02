@@ -58,12 +58,7 @@ int main(){
     int max; // to store the maximum out of the two
     
     // conditional statement 
-    if(num1 > num2){   
-        max = num1;
-    }
-    else{
-        max = num2;
-    }
+    max = (num1 > num2) ? num1 : num2;
     
     cout << "The maximum no. is: " << max << "\n";
   
