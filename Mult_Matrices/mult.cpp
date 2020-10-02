@@ -18,7 +18,7 @@ int main(){
   cout << endl << "Enter elements of matrix 1:" << endl;
   for(int i = 0; i < rows_1; ++i){
     for(int j = 0; j < cols_1; ++j){
-      cout << "Enter element a" << i + 1 << j + 1 << " : ";
+      
       cin >> matrice_1[i][j];
       }
   }
@@ -27,17 +27,17 @@ int main(){
   cout << endl << "Enter elements of matrix 2:" << endl;
   for(int i = 0; i < rows_2; ++i){
     for(int j = 0; j < cols_2; ++j){
-      cout << "Enter element b" << i + 1 << j + 1 << " : ";
+      
       cin >> matrice_2[i][j];
       }
   }
 
-  if (rows_2 != cols_1 || rows_1 != cols_2){
+  if (cols_1 != rows_2){
     cout << "Can't multiply matrices" << endl;
     return 0;
   }
   int j = 0;
-  for (int i = 0; i < cols_2; i++){
+  for (int i = 0; i < rows_1; i++){
     for (j = 0; j < cols_2; j++){
       matrice_output[i][j] = 0;
       for (int k = 0; k < cols_1; k++){
@@ -47,11 +47,11 @@ int main(){
   }
 
   cout << "\nResults: \n" << endl;
-  for(int i = 0; i < cols_2; i++){
-    cout << "[ ";
+  for(int i = 0; i < rows_1; i++){
+   
     for(int j = 0; j < cols_2; j++){
       cout << matrice_output[i][j] << "  ";
     }
-    cout << "]" << endl;
+ 
   }
 }
